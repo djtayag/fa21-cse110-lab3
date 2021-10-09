@@ -1,0 +1,146 @@
+/* Styling sheet for TFT Set 5.5 Webpage */
+header {
+    margin: 25px 50px 75px 100px;
+    font-size: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    text-align: right;
+}
+
+body {
+    background-color: lightskyblue; 
+    position: static;
+}
+
+h1 {
+    color: rgb(256, 256, 256);
+    font-size: 10em;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#ccq {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#item-a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#item-b {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#item-c {
+    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 1;
+}
+#traits {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: baseline;
+}
+#topic {
+    color: #FF0000;
+    text-align: center;
+}
+
+#date {
+    color: rgb(219, 40, 139);
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+}
+
+img {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: lightcoral;
+    border-width: 10px;
+}
+
+.content {
+    font-size: 20px;
+    padding: 50px 30px 50px 80px;
+    width: 1000px;
+}
+
+#subscribe {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 20pt;
+    text-decoration: underline;
+    display: inline
+}
+
+video {
+    border-style: solid;
+    border-color: lightcoral;
+    border-width: 10px;
+    border-radius: 10px;
+    height: 500px;
+    width: 1000px;
+    min-width: 100px;
+    max-width: 2000px;
+}
+
+a {
+    background: powderblue;
+}
+
+a:hover {
+    background-color: gold;
+}
+a:active {
+    color: red;
+}
+
+@media (max-width: 500px) {
+    body {
+        color: blue;
+    }
+}
+
+a[href^="#"] {
+    transition: background-color 0.5s;
+}
+
+h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div li {
+    list-style-type: circle;
+}
+
+nav > a {
+    font-family:'Courier New', Courier, monospace;
+}
+
+img ~ div {
+    color: white ;
+}
+
+li:first-of-type + li {
+    color: red
+}
+
+div.content {
+    background-color: lightslategray;
+}
